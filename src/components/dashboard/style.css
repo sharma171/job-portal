@@ -1,0 +1,189 @@
+.main-dash {
+    gap: 32px;
+    padding: 24px;
+    height: auto;
+    position: relative;
+    background: #f5f7fa;
+}
+.dash-nav {
+    width: 233px;
+    height: calc(100vh - 100px);
+    background: linear-gradient(0deg, #5FA3E2 80.26%, rgba(146, 95, 226, 0) 143.39%, #E2D4F7 143.39%);
+    border-radius: 24px;
+    padding: 30px;
+    align-items: center;
+    position: sticky;
+    top:24px;
+}
+.dash-nav .student-mask {
+    width: 128px;
+    height: 128px;
+    background: linear-gradient(180deg, #5FB3E2 0%, #4274C0 100%);
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.dash-nav .nav-list {
+    gap: 32px;
+}
+.dash-nav .nav-list .nav-link {
+    gap: 12px;
+    align-items: center;
+    text-decoration: none;
+}
+.dash-nav .nav-list .nav-link .icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+}
+.dash-nav .nav-list .nav-link span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.6;
+}
+.dash-nav .nav-list .nav-link:hover {
+    .icon {
+        opacity: 1;
+    }
+    span {
+        opacity: 1;
+    }
+}
+.dash-nav .nav-list .nav-link.active {
+    .icon {
+        opacity: 1;
+    }
+    span {
+        opacity: 1;
+    }
+}
+.main-dash {
+    .content {
+        width: 100%;
+        gap: 30px;
+        .user-dash {
+            height: 256px;
+            min-height: 256px;
+            background: linear-gradient(98.5deg, #5F93E2 53.12%, #CFE4F7 155.43%);
+            box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        .user-dash {
+            .date {
+                margin: 48px auto auto 59px;
+            }
+            .greeting {
+                padding-bottom: 48px;
+            }
+            .date, .greeting span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(255, 255, 255, 0.75);
+            }
+            .greeting span {
+                margin: 1px auto auto 59px;
+            }
+            .greeting .g-head {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 48px;
+                color: #FFFFFF;
+                margin: 0 0 0 59px;
+            }
+            .user-col {
+                .bgImg {
+                    width: 507px;
+                    height: 354.58px;
+                }
+            }
+        }
+        .row-dash{
+            gap:30px;
+        }
+        .col-dash{
+            box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.12);
+            background: #fff;
+            width: 100%;
+            --bs-card-border-width: 1px;
+            --bs-card-border-color: #dbe0e5;
+            --bs-card-border-radius: 22px;
+            --bs-card-box-shadow: 0px 8px 24px rgba(27, 46, 94, 0.08);
+            --bs-card-bg: #ffffff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            color: #39465f;
+            word-wrap: break-word;
+            background-color: var(--bs-card-bg);
+            background-clip: border-box;
+            border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+            border-radius: var(--bs-card-border-radius);
+
+            .top-head {
+                border-bottom: 1px solid #dbe0e5;
+                padding: 1rem 1rem 1rem 1.6rem;
+                span {
+                    font-size: 0.975rem;
+                    font-weight: 600;
+                }
+            }
+        }
+        .col-dash .docslist {
+            padding: 16px;
+            ul {
+                margin: 0 0 0 0;
+                padding-left: 27px;
+            }
+        }
+        .height-divider {
+            background: #dbe0e5;
+            height: 100%;
+            width: 1px;
+        }
+        .col-dash .docs-row .docsupload {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 46%;
+            .docsIcon {
+                width: 86.50000000000009px;
+                margin-bottom: 10px;
+                height: auto;
+            }
+        }
+        .col-dash .docsupload:hover {
+            scale:1.05;
+            transition: all 0.5s;
+        }
+        .col-dash .interview-row {
+            .docsupload {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                width: 33.3%;
+                min-height: 207px;
+                height: fit-content;
+                .docsIcon {
+                    width: 60.50000000000009px;
+                    margin-bottom: 10px;
+                    height: auto;
+                }
+                span{
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
